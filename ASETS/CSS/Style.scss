@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Rubik+Microbe&display=swap');
+
+// font-family: 'Raleway', sans-serif;
+// font-family: 'Rubik Microbe', cursive;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow: hidden;
+}
+
+// Variables
+$white: #fff;
+$black: #000;
+
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/ASETS/IMAGES/omk-6DhD3VYd9q8-unsplash.jpg);
+    background-size: 100% 100%;
+    display: grid;
+    place-items: center;
+
+    .main {
+        width: 25%;
+         background: url(/ASETS/IMAGES/first.webp);
+        background-size: 100% 100%;
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+
+        h3 {
+            text-align: center;
+            font-family: 'Rubik Microbe', cursive;
+            font-size: 2.7rem;
+            font-weight: 600;
+            // color: $white;
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+
+            input {
+                text-align: center;
+                font-size: 1.5rem;
+                outline: none;
+                margin: 2rem 0;
+            }
+            button {
+                font-size: 1.5rem;
+                font-weight: 600;
+                outline: none;
+                border: 1px solid gray;
+                background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+                color: $white;
+            }
+        }
+        .qrcode{
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+            margin: 2rem;
+            border: 1px solid white;
+        }
+    }
+}
